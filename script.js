@@ -15,10 +15,10 @@
     const addImage = canvas.getContext('2d');
 
     const backgroundImage = new Image();
-    backgroundImage.src = 'assets/images/1757916623243_6_10_23_68499.png';
+    backgroundImage.src = '1757916623243_6_10_23_68499.png';
 
     const scannerImage = new Image();
-    scannerImage.src = 'assets/images/c4628ad0a3b29009e14e328e428417df.png';
+    scannerImage.src = 'c4628ad0a3b29009e14e328e428417df.png';
 
     let imagesLoaded = 0;
     const totalImages = 2;
@@ -113,10 +113,10 @@ const canvas2 = document.getElementById('myCanvas2');
 const addImage2 = canvas2.getContext('2d');
 
 const backgroundImage2 = new Image();
-backgroundImage2.src = 'assets/images/1757916654744_6_10_54_48599.png';
+backgroundImage2.src = '1757916654744_6_10_54_48599.png';
 
 const scannerImage2 = new Image();
-scannerImage2.src = 'assets/images/c4628ad0a3b29009e14e328e428417df.png';
+scannerImage2.src = 'c4628ad0a3b29009e14e328e428417df.png';
 
 let imagesLoaded2 = 0;
 const totalImages2 = 2;
@@ -203,6 +203,7 @@ downloadButton2.addEventListener('click', function() {
       window.location.href = whatsappUrl;
     }
 });
+
 
 
 
