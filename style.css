@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    margin: 50px 0;
+}
+
+.container{
+    max-width: 1180px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+/* button style */
+.pass-button{
+    padding: 13px;
+    width: 100%;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    color: black;
+    font-family: arial;
+    border: none;
+}
+.buttons-all{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    align-items: center;
+}
+
+/* for add color */
+.btn-one {
+    background-color: rgb(88, 155, 255);
+    color: white;
+    transition-duration: 0.2s;
+}
+.btn-one::before{
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    content: "\f019"; 
+    padding-right: 5px;
+}
+.btn-two{
+    background-color: rgb(129, 129, 129);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.2s;
+}
+.btn-two::before{
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    content: "\f0c5"; 
+    padding-right: 5px;
+}
+.btn-three{
+    background-color: rgb(52, 217, 52);
+    color: white;
+    transition-duration: 0.2s;
+}
+.btn-three::before{
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    content: "\f14d"; 
+    padding-right: 5px;
+}
+.btn-one:hover, .btn-two:hover, .btn-three:hover {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.pass-container {
+    width: fit-content;
+    background-color: #f3f4f6;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.pass {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+
+
+@media (max-width: 991px) {     /* for tablet */
+    .pass-container{
+        padding: 20px;
+    }
+    .buttons-all{
+        margin: 10px 0;
+    }
+}
+@media (max-width: 768px) {     /* for mobiles */
+    .pass-button{
+        padding: 10px 5px;
+        font-size: 10px;
+    }
+    .buttons-all{
+        margin: 0;
+        width: 100%;
+    }
+    .main-box{
+        gap: 30px;
+    }
+}
